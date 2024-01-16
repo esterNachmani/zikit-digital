@@ -1,0 +1,71 @@
+.entry-header{
+  display: none;
+}
+.col2-set{
+  display: flex!important;
+  flex-direction:row-reverse;
+  justify-content: center;
+  flex-wrap: wrap;
+  h2{
+    font-size: 17px;
+    margin-bottom: 0px;
+  }
+  form{
+    margin-top: 10px!important;
+    height: 300px;
+    border-radius: 0px!important;
+    background-color: #f1f1f1!important;
+    box-shadow: 0 15px 26px #a7a7a7;
+
+    *{
+      border-radius: 0px!important;
+    }
+    button{
+
+      position: relative;
+      bottom: 5px;
+      @include button_purple;
+      width: 100%;
+    }
+  }
+
+  .col-2{
+    max-width:300px!important;
+    float: right!important;
+    margin: 10px;
+  }
+  .col-1{
+    max-width:300px!important;
+    float: left!important;
+    margin: 10px;
+  }
+
+}
+.woocommerce-EditAccountForm{
+  padding-left: 30% !important;
+  padding-right: 10% !important;
+  button{
+    @include button_purple;
+    width: 20%;
+  }
+}
+@media only screen and (max-width: 768px){
+  .woocommerce-EditAccountForm{
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+    button{
+      @include button_purple;
+      width: 200px;
+    }
+  }
+  //.col2-set{
+  //  display: flex!important;
+  //  flex-direction:column-reverse;
+  //}
+}
+.flex-checkout .col2-set .col-1{
+  max-width: 100%!important;
+}
+.flex-checkout .col2-set .col-2{
+  max-width: 100%!important;
+}

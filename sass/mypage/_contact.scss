@@ -1,0 +1,23 @@
+.contact-flex{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: baseline;
+  margin-bottom: 100px;
+  form{
+    .wpcf7-submit{
+      @include button_purple;
+      width: 100%;
+    }
+  }
+  p{
+    margin: 0px;
+  }
+}
+.title-contact{
+  color: white;
+  // background-color: $color-purple;
+  background-color: $color-purple;
+  padding: 50px;
+  text-align: center;
+}

@@ -1,0 +1,26 @@
+.title-odot{
+  color: white;
+ // background-color: $color-purple;
+background-color: $color-purple;
+  padding: 50px;
+  text-align: center;
+}
+.odot_field{
+margin-bottom: 100px;
+  margin-right: 30%;
+  margin-left: 30%;
+  max-width: 800px;
+  .title{
+    text-align: center;
+  }
+  img{
+    width: 800px;
+  }
+
+}
+@media only screen and (max-width: 900px){
+  .odot_field{
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,112 @@
+
+
+.site-footer {
+   // background-color: black;
+   // .map-area{
+   //   display: flex;
+   //   justify-content: space-evenly;
+   //   max-width: 2200px;
+   //   align-items: center;
+   //   .map-image{
+   //     width:50% ;
+   //   }
+   //   .text-map{
+   //       margin-bottom: 0px!important;
+   //       text-align: right;
+   //       padding-right: 10px;
+   //     }
+   //   }
+
+    .site-info {
+      background-color: black;
+      padding: 30px;
+     // background-color: black;
+      display: flex;
+      justify-content: space-around;
+      align-items: baseline;
+      flex-wrap: wrap;
+
+      p{
+        margin: 0;
+      }
+      * {
+        color: white;
+      }
+
+      .left-footer {
+        text-align: right;
+        max-width: 360px;
+
+      }
+      .right-footer{
+        .odot-link{
+            a{
+              margin-top: 10px;
+              display: flex;
+              align-items: center;
+              text-decoration: none;
+              &:hover{
+                text-decoration:underline;
+              }
+            }
+         }
+        .contact-link{
+          a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            &:hover{
+              text-decoration:underline;
+            }
+          }
+        }
+
+      }
+    }
+    h5{
+      background-color: black;
+      color: #cccccc;
+      text-align: center;
+      font-size: 16px;
+      padding-bottom: 20px;
+      margin: 0px!important;
+      a{
+        color: #cba2fc!important;
+        &:hover{
+          color: $color-purple!important;
+        }
+      }
+
+    }
+  }
+.map-area{
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 2200px;
+  align-items: center;
+  .map-image{
+    width:50% ;
+  }
+  .text-map{
+    margin-bottom: 0px!important;
+    text-align: right;
+    padding-right: 10px;
+  }
+}
+
+
+  @media only screen and (max-width: 800px) {
+    .site-footer .map-area {
+      flex-wrap: wrap;
+      .map-image {
+        width: 80%;
+      }
+    }
+    .left-footer{
+      padding-top: 40px;
+    }
+
+  }
+.edit-link{
+  display: none;
+}

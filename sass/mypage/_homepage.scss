@@ -1,0 +1,247 @@
+$color-purple : rgba(43, 3, 79, 0.88);
+$color-green :#ff00ff ;
+
+//#00ff99;
+//#b9f680;
+body {
+ font-family:'sans', sans-serif;
+}
+
+.bunner-homepage{
+  text-align: center;
+  position: relative;
+  img{
+    padding-right: 10%;
+    padding-left: 10%;
+    width:100%;
+    float: inside;
+  }
+  .button{
+    @include button_bunner;
+    font-size: 20px;
+    position:relative;
+    //top: 70%;
+    //left:50%;
+    // transform: translate(-50%, -50%);
+    //-ms-transform: translate(-50%, -50%);
+      bottom: 80px;
+  }
+
+    .title{
+      cursor: pointer;
+      font-family: 'rubik', sans-serif;
+      position: absolute;
+      //position: relative;
+      //top: 20%;
+      bottom: 200px;
+      right: 215px;
+    //  transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      //background-color: #555;
+      color: $color-purple;
+      padding: 12px 24px;
+      //border-radius: 5px;
+      text-align: center;
+      font-size: 80px;
+      font-weight: 400;
+      text-shadow:5px 5px 5px $color-purple;
+      width: 30%;
+      //-webkit-text-stroke: 1px white;
+    }
+  .sub_title{
+    cursor: pointer;
+    position: absolute;
+    //top: 50%;
+    bottom: 170px;
+    right: 205px;
+    //  transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    //background-color: #555;
+    color: $color-purple;
+    padding: 12px 24px;
+    //border-radius: 5px;
+    text-align: center;
+    font-size:30px;
+    //text-shadow:5px 5px 5px $color-purple;
+    width: 30%;
+  }
+
+}
+.title-catalog{
+  text-align: center;
+ div{
+   margin-top: -4px;
+   width: 50px;
+   height: 2px;
+   background-color: $color-purple;
+   position: absolute;
+   right: 48.8%;
+  }
+}
+.link-catalogs{
+
+  margin: 50px;
+  margin-right: 10%;
+  margin-left: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  &>* {
+    flex: 33.3333%;
+  }
+   a{
+     text-align: center;
+   img{
+     margin-top: 30px;
+   }
+ }
+
+}
+.bunner_sales{
+  margin-bottom: 50px;
+  img{
+    width: 100%;
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+}
+@media only screen and (max-width: 1700px) {
+  .bunner-homepage{
+    img{
+     // height: 550px;
+      object-fit: cover;
+      padding: 0px;
+    }
+    .title{
+      font-size: 60px;
+      margin-bottom: 0px;
+      position: absolute;
+      bottom: 280px;
+    }
+    .sub_title{
+      font-size: 25px;
+      position: absolute;
+      //top: 45%;
+    }
+
+  }
+}
+
+@media only screen and (max-width: 1400px){
+ .bunner-homepage{
+   .title{
+     width: 35%;
+   }
+   .button{
+     font-size: 16px;
+   }
+ }
+  .button-under-bunner{
+    a{
+      font-size: 16px!important;
+    }
+  }
+}
+@media only screen and (max-width: 1200px){
+  .bunner-homepage{
+    img{
+      //height: 385px;
+    }
+    .title{
+     font-size: 50px;
+      text-shadow: 5px 2px 10px rgb(43 3 79 / 88%);
+      position: absolute;
+      bottom: 180px;
+      right: 60px;
+    }
+    .sub_title{
+      position: absolute;
+      bottom: 130px;
+      right: 90px;
+      font-size: 18px;
+    }
+    .button{
+      font-size: 16px;
+      //position: absolute;
+      //top: 53%;
+
+    }
+  }
+}
+@media only screen and (max-width: 700px){
+  .bunner-homepage{
+    img {
+      opacity: 0.4;
+      object-position: left;
+      height: 243px
+    }
+    .title{
+      font-size: 40px;
+      text-shadow: 5px 5px 10px rgb(43 3 79 / 88%);
+      width: 80%;
+      position: absolute;
+      bottom: 95px;
+      right: 40px;
+    }
+    .sub_title{
+      position: absolute;
+      bottom: 40px;
+      right: 77px;
+      width: 60%;
+      font-size: 18px;
+    }
+    .button{
+      font-size: 16px;
+      //position: absolute;
+      //top: 48%;
+      //padding-top: 5px!important;
+      //padding-bottom: 5px!important;
+      width: 50% !important;
+      text-align: center;
+      position: relative;
+      bottom: 55px;
+
+    }
+    .button-under-bunner{
+
+      a{
+        font-size: 13px!important;
+      }
+    }
+
+  }
+  .title-catalog{
+    font-size: 18px;
+    div{
+      right: 45%;
+    }
+  }
+}
+.button-under-bunner{
+  text-align: center;
+
+  margin-top: 40px;
+  margin-bottom: 50px;
+  a{
+    @include button_bunner;
+    //padding-right: 70px!important;
+    //padding-left: 70px!important;
+    font-size: 20px;
+  }
+}
+.map-area{
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 2200px;
+  align-items: center;
+  .map-image{
+    width:50% ;
+  }
+  .text-map{
+    margin-bottom: 0px!important;
+    text-align: right;
+    padding-right: 10px;
+  }
+}
+
+

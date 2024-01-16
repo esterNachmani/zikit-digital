@@ -1,0 +1,49 @@
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Column width with margin
+@mixin column-width($numberColumns: 3) {
+	width: map-get($columns, $numberColumns) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
+}
+
+@mixin button_purple{
+	border-radius: 0px!important;
+	background-image: linear-gradient(to bottom right, #5b3d8c, #33045e)!important;
+	//background-color: #a549f8;
+	color:white!important;
+	//font-size: 20px;
+	font-weight: bold!important;
+	padding: 10px 50px!important;
+	text-decoration: none!important;
+	//border: 3px solid #000;
+	outline: 2px solid #fff!important;
+	outline-offset: -5px!important;
+}
+@mixin button_bunner{
+	border-radius: 30px!important;
+	background-image: linear-gradient(to bottom right, #cbbcf8, #9942e8)!important;
+	//background-color: #a549f8;
+	color:black!important;
+	//font-size: 20px;
+	font-weight: bold!important;
+	padding: 10px 50px!important;
+	text-decoration: none!important;
+	//border: 3px solid #000;
+	outline: 2px solid #fff!important;
+	outline-offset: -5px!important;
+}
+
+
+
+@mixin input_purple{
+	background-color: #efeafc;
+	border-radius: 0px!important;
+	outline: 2px solid #ffffff !important;
+	outline-offset: -5px!important;
+	color: black;
+	//padding: 10px 50px!important;
+}

@@ -1,0 +1,77 @@
+.woocommerce-MyAccount-navigation{
+  padding-right: 10% !important;
+  padding-bottom: 50px;
+  border-left: #a6a5a5 ridge;
+  border-width: thin;
+  ul{
+    //border-left: #a6a5a5 ridge;
+    //border-width: thin;
+    li{
+
+      border-bottom: #a2a2a2 ridge;
+      border-width: thin;
+
+      //border-color: #818181;
+      padding: 20px;
+      padding-left: 50px;
+      text-decoration: none;
+      list-style-type: none;
+      a{
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: bold;
+        color: $color-purple;
+        &:hover{
+          color: $color-purple;
+        }
+      }
+
+
+    }
+    li:hover{
+      border-bottom: $color-purple solid;
+    }
+
+  }
+
+}
+.woocommerce-MyAccount-navigation{
+  ul {
+    border-bottom: none;
+  }
+}
+.woocommerce-info{
+  margin-left: 10% !important;
+  a{
+    border-radius: 0px!important;
+    background-color: $color-purple !important;
+    color: white!important;
+  }
+}
+.woocommerce-account{
+
+  .edit{
+    float: right!important;
+  }
+
+}
+@media only screen and (max-width: 768px) {
+  .woocommerce-MyAccount-navigation {
+    padding-right: 0px !important;
+  }
+}
+.woocommerce-error, .woocommerce-info, .woocommerce-message {
+background-color: white;
+
+}
+.woocommerce-error::before, .woocommerce-info::before, .woocommerce-message::before{
+  content: ""!important;
+}
+.woocommerce-error, .woocommerce-info, .woocommerce-message {
+  background-color: white;
+  text-align: center;
+}
+.woocommerce-MyAccount-navigation-link--customer-logout{
+  border-bottom: 3px solid $color-purple !important;
+  margin-bottom: 50px;
+}

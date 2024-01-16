@@ -1,0 +1,90 @@
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  margin-top: 5%;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 400px; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.product_popup{
+  display: flex;
+}
+// css of slider
+#slider-container {
+  width: 366px;
+  //height: 300px;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 80%;
+  height: 100%;
+}
+
+.slide:first-child {
+  display: block;
+}
+.slide li {
+padding: 20px;
+  list-style-type: none;
+  a {
+    text-align: center;
+
+    * {
+      text-align: center;
+    }
+  }
+}
+.modal-content{
+  text-align: center;
+  padding-bottom: 50px;
+  h1{
+    text-align: center;
+  }
+  .add_to_cart_button{
+    display: none!important;
+  }
+  .go-to-shop{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    @include button_purple;
+    color: white!important;
+  }
+}

@@ -1,0 +1,43 @@
+//RubikMarkerHatch-Regular.ttf
+@font-face {
+  font-family:'rubik';
+  font-weight:400; /*(medium)*/
+  font-style: normal;
+  src: url('../dist/fonts/RubikMarkerHatch-Regular.woff')format('woff'),
+  url('../dist/fonts/RubikMarkerHatch-Regular.otf')format('otf'),
+  url('../dist/fonts/RubikMarkerHatch-Regular.ttf')format('ttf'),
+  url('../dist/fonts/RubikMarkerHatch-Regular.eot')format('eot'),
+
+}
+
+@font-face {
+  font-family:'sans_con';
+  font-weight:500; /*(medium)*/
+  font-style: normal;
+  src: url('../dist/fonts/OpenSans_Condensed-Medium.woff')format('woff'),
+  url('../dist/fonts/OpenSans_Condensed-Medium.otf')format('otf'),
+  url('../dist/fonts/OpenSans_Condensed-Medium.ttf')format('ttf'),
+  url('../dist/fonts/OpenSans_Condensed-Medium.eot')format('eot'),
+
+}
+@font-face {
+  font-family:'sans_con';
+  font-weight:300; /*(light)*/
+  font-style: normal;
+  src: url('../dist/fonts/OpenSans_Condensed-Light.woff')format('woff'),
+  url('../dist/fonts/OpenSans_Condensed-Light.otf')format('otf'),
+  url('../dist/fonts/OpenSans_Condensed-Light.ttf')format('ttf'),
+  url('../dist/fonts/OpenSans_Condensed-Light.eot')format('eot'),
+}
+
+@font-face {
+  font-family:'sans';
+  font-weight:500; /*(light)*/
+  font-style: normal;
+  src: url('../dist/fonts/OpenSans-Medium.woff')format('woff'),
+  url('../dist/fonts/OpenSans-Medium.otf')format('otf'),
+  url('../dist/fonts/OpenSans-Medium.ttf')format('ttf'),
+  url('../dist/fonts/OpenSans-Medium.eot')format('eot'),
+}
+
+
