@@ -12,35 +12,38 @@ jQuery(document).ready(function($) {
             product_id = $form.find('input[name=product_id]').val() || id,
             variation_id = $form.find('input[name=variation_id]').val() || 0,
             metaData = $form.find('textarea[name=add-custom-text]').val();
-         entry = document.querySelector('.summary.entry-summary');
+        entry = document.querySelector('.summary.entry-summary');
 
-         //מחיר של מוצר וריאציה
-         price_var = entry.querySelector('.woocommerce-variation-price');
-         entry1=0;
-         priceSpan=0;
-         if(price_var){
-             entry1 = price_var;
-         }
-         if(entry1) {
-             priceSpan = entry1.querySelector('.woocommerce-Price-amount');
-         }
-         if (!priceSpan){
-             ins = entry.querySelector('ins');
-             if (ins) {
+        //מחיר של מוצר וריאציה
+        price_var = entry.querySelector('.woocommerce-variation-price');
+        entry1=0;
+        priceSpan=0;
+        if(price_var){
+            entry1 = price_var;
+        }
+        //אם יש מחיר וריאציה
+        if(entry1) {
+            priceSpan = entry1.querySelector('.woocommerce-Price-amount');
+        }
+        //אם זה לא מוצר וריאציה צריך לבדק האם יש מחיר מבצע
+        if (!priceSpan) {
+            if (entry.querySelector('ins')) {
+                ins = entry.querySelector('ins');
                 priceSpan = ins.querySelector('.woocommerce-Price-amount');
-             }            
-         }
-         if(!priceSpan) {
-             priceSpan = entry.querySelector('.woocommerce-Price-amount');
-         }
-             priceSpanBdi = priceSpan.querySelector('bdi');
+            }
+        }
+        //אם אין מחיר מבצע וזה גם לא מוצר וריאציה
+        if(!priceSpan) {
+            priceSpan = entry.querySelector('.woocommerce-Price-amount');
+        }
+        priceSpanBdi = priceSpan.querySelector('bdi');
         var custom_price = priceSpanBdi.textContent;
         // Replace the price in the text with the new price
         var newText = custom_price.replace("₪", "");
         custom_price = parseFloat(newText);
         priceSpanBdi.textContent = newText;
-         //$('.input-text.qty.text').trigger('change');
-       // min_qty = $('input[name=variation_id]')[0].min;
+        //$('.input-text.qty.text').trigger('change');
+        // min_qty = $('input[name=variation_id]')[0].min;
         min_qty = $('#minimum_to_order')[0].dataset;
         var div = product_qty/min_qty['set'];
         console.log(div);
@@ -53,8 +56,8 @@ jQuery(document).ready(function($) {
                 alert(' ערך הכמות אינו תקין. '+ errorMessage);
                 //$('input[name=quantity]').parent().children('lable').text(errorMessage);
                 //$form.find('input[name=quantity]').validationMessage = ' יש לשים כמות במכפלות של ' + min_qty['set'];
-               // $form.find('input[name=quantity]').reportValidity();
-               // document.getElementById("email").setCustomValidity("This email is already used");
+                // $form.find('input[name=quantity]').reportValidity();
+                // document.getElementById("email").setCustomValidity("This email is already used");
                 return;
             }
         }
@@ -107,10 +110,10 @@ jQuery(document).ready(function($) {
                     $(document.body).trigger('added_to_cart', [response.fragments, response.cart_hash, $thisbutton]);
                     //$( document.body ).trigger( 'wc_fragments_refreshed' );
                     $('.widget_shopping_cart_content').html(response.fragments['div.widget_shopping_cart_content']);
-                   // $('.cart-popup').addClass('active');
+                    // $('.cart-popup').addClass('active');
                     //$button.removeClass('loading');
                     console.log('response fregments = ' + JSON.stringify(response.fragments));
-                  // $('.woocommerce-products-header').html(response.fragments['div.widget_shopping_cart_content']);
+                    // $('.woocommerce-products-header').html(response.fragments['div.widget_shopping_cart_content']);
                     $('.widget_shopping_cart_content').html(response.fragments['div.widget_shopping_cart_content']);
                     console.log(response);
 
